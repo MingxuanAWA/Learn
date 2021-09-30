@@ -4,4 +4,4 @@ jobs:
   Hello:
     runs-on: ubuntu-latest
     steps:
-      - runs: ls ${{ github.workspace }}
+      - run: ls ${{ github.workspace }}
