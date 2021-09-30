@@ -1,0 +1,7 @@
+name: hello
+on: [push]
+jobs:
+  Hello:
+    runs-on: ubuntu-latest
+    steps:
+      - runs: ls ${{ github.workspace }}
