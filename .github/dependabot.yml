@@ -5,6 +5,6 @@ updates:
     schedule:
       interval: daily
     commit-message: 
-      prefix: ":allow_up: update dependent"
-      prefix-development: ":allow_up: update dev dependent"
+      prefix: ":allow_up:"
+      prefix-development: ":allow_up:"
       include: "scope"
