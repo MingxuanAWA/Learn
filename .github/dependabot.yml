@@ -4,3 +4,7 @@ updates:
     directory: "/"
     schedule:
       interval: daily
+    commit-message: 
+      prefix: ":allow_up: update dependent"
+      prefix-development: ":allow_up: update dev dependent"
+      include: "scope"
