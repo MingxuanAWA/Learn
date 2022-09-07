@@ -5,11 +5,14 @@ jobs:
   Pre-Commit:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-        with:
-          #repository: ${{ github.event.pull_request.full_name }}
-          ref: ${{ github.event.pull_request.head.sha }}
+#       - uses: actions/checkout@v3
+#         with:
+#           repository: ${{ github.event.pull_request.full_name }}
+#           ref: ${{ github.event.pull_request.head.ref }}
 
+      - name: Checkout
+        run: gh pr checkout ${{ github.event.pull_request.number }}
+    
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
